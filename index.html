@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#090b12">
+  <title>CS Learner — Learn. Build. Master.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="ambient ambient-one"></div><div class="ambient ambient-two"></div>
+  <aside class="sidebar" id="sidebar">
+    <a class="brand" href="#"><span class="brand-mark">&lt;/&gt;</span><span>CS <b>Learner</b></span></a>
+    <div class="side-label">LEARN</div>
+    <a class="nav-item active" href="#home"><span>⌂</span> Overview</a>
+    <a class="nav-item" href="#languages"><span>⌘</span> Languages</a>
+    <a class="nav-item" href="#playground"><span>▣</span> Code playground</a>
+    <a class="nav-item" href="#tutor"><span>✦</span> AI tutor <em>NEW</em></a>
+    <div class="side-label">YOUR SPACE</div>
+    <a class="nav-item" href="#roadmap"><span>◎</span> Learning roadmap</a>
+    <a class="nav-item" href="#practice"><span>◈</span> Practice challenges</a>
+    <div class="sidebar-bottom">
+      <div class="pro-card"><div class="pro-icon">✦</div><strong>Keep growing.</strong><p>Small steps today. Big skills tomorrow.</p><a href="#roadmap">View your roadmap ↗</a></div>
+      <div class="profile"><div class="avatar">CL</div><div><strong>Code Explorer</strong><small>Beginner · Level 1</small></div><button id="profileMenu" aria-label="Profile menu">•••</button></div>
+    </div>
+  </aside>
+
+  <main class="main" id="home">
+    <header class="topbar">
+      <button class="mobile-menu" id="menuBtn" aria-label="Open menu">☰</button>
+      <div class="breadcrumb">Workspace <span>/</span> <b>Overview</b></div>
+      <div class="top-actions"><div class="status"><i></i> Learning mode</div><button class="icon-btn" id="themeBtn" title="Toggle glow">☼</button><button class="help-btn" onclick="document.querySelector('#tutor').scrollIntoView({behavior:'smooth'})">Ask a doubt <span>↗</span></button></div>
+    </header>
+
+    <section class="hero">
+      <div class="hero-copy"><div class="eyebrow"><span class="spark">✦</span> YOUR CODING JOURNEY STARTS HERE</div>
+        <h1>Think in code.<br><span>Build your future.</span></h1>
+        <p>One platform to learn programming, understand concepts, solve doubts, and turn ideas into working code.</p>
+        <div class="hero-actions"><a class="primary-btn" href="#languages">Explore languages <span>→</span></a><a class="text-btn" href="#playground"><span class="play">▶</span> Try the playground</a></div>
+        <div class="hero-proof"><div class="mini-avatars"><span>JS</span><span>Py</span><span>C+</span></div><span><b>One goal.</b> Become a better problem solver.</span></div>
+      </div>
+      <div class="hero-visual">
+        <div class="orbit orbit-a"></div><div class="orbit orbit-b"></div>
+        <div class="floating-chip chip-top"><span class="chip-dot green"></span> Learning path <b>●●●○</b></div>
+        <div class="code-window"><div class="window-head"><div class="window-dots"><i></i><i></i><i></i></div><span>hello_world.js</span><span class="live-label">LIVE PREVIEW</span></div>
+          <div class="code-sample"><div><span class="ln">01</span><span class="purple">const</span> <span class="blue">future</span> = <span class="orange">"yours"</span>;</div><div><span class="ln">02</span><span class="purple">function</span> <span class="yellow">keepLearning</span>() {</div><div><span class="ln">03</span>&nbsp;&nbsp;<span class="purple">return</span> <span class="green-text">"Keep building ✦"</span>;</div><div><span class="ln">04</span>}</div><div><span class="ln">05</span><span class="blue">console</span>.log(keepLearning());</div></div>
+          <div class="terminal"><span>▶</span> Keep building ✦ <small>Process finished</small></div>
+        </div>
+        <div class="floating-chip chip-bottom"><span class="trophy">✧</span><div><b>Progress unlocked</b><small>Every expert started somewhere.</small></div></div>
+      </div>
+    </section>
+
+    <section class="stats-grid">
+      <div class="stat-card"><div class="stat-top"><span>LANGUAGES TO EXPLORE</span><span class="stat-icon purple-bg">⌘</span></div><div class="stat-number">08 <small>+</small></div><div class="stat-foot">From fundamentals to advanced <span>↗</span></div></div>
+      <div class="stat-card"><div class="stat-top"><span>LEARNING TRACKS</span><span class="stat-icon blue-bg">◈</span></div><div class="stat-number">12</div><div class="stat-foot">Structured, step-by-step paths <span>↗</span></div></div>
+      <div class="stat-card"><div class="stat-top"><span>YOUR DAILY GOAL</span><span class="stat-icon green-bg">✦</span></div><div class="stat-number">20 <small>min</small></div><div class="stat-foot">Consistency beats cramming <span>↗</span></div></div>
+      <div class="stat-card"><div class="stat-top"><span>BUILT FOR CURIOSITY</span><span class="stat-icon orange-bg">⚡</span></div><div class="stat-number">∞</div><div class="stat-foot">Questions are always welcome <span>↗</span></div></div>
+    </section>
+
+    <section class="section" id="languages">
+      <div class="section-heading"><div><div class="eyebrow">PICK YOUR NEXT SKILL</div><h2>Explore <span>languages.</span></h2><p>Start with the basics or dive into advanced concepts.</p></div><a class="view-all" href="#languages">View all <span>↗</span></a></div>
+      <div class="language-grid" id="languageGrid"></div>
+    </section>
+
+    <section class="section split-section" id="playground">
+      <div class="section-heading"><div><div class="eyebrow">LEARN BY DOING</div><h2>Your coding <span>playground.</span></h2><p>Write code, run the demo, and learn what each line does.</p></div></div>
+      <div class="playground">
+        <div class="editor-side"><div class="editor-toolbar"><div class="editor-file"><span class="js-icon">JS</span><span id="editorFilename">main.js</span><span class="unsaved">●</span></div><select id="editorLanguage" aria-label="Choose language"><option value="javascript">JavaScript</option><option value="python">Python (demo)</option><option value="c">C (demo)</option></select></div>
+          <div class="editor-body"><div class="line-numbers" id="lineNumbers">1<br>2<br>3<br>4</div><textarea id="codeInput" spellcheck="false" aria-label="Code editor">const name = "Learner";
+console.log("Hello, " + name + "!");
+
+// Try changing the name!</textarea></div>
+          <div class="editor-footer"><span><i></i> Ready to run</span><button class="run-btn" id="runBtn">▶ Run code</button></div>
+        </div>
+        <div class="output-side"><div class="output-head"><span><i></i> OUTPUT CONSOLE</span><button id="clearOutput">Clear</button></div><div class="output-content" id="output"><span class="muted">// Your output will appear here.</span><div class="output-hint">Press <b>Run code</b> to see what your program does.</div></div><div class="explain-box"><span class="explain-icon">✦</span><div><b>Learning tip</b><p id="learningTip">Change the value of <code>name</code> and run it again. Experimentation is how coding clicks.</p></div></div></div>
+      </div>
+      <p class="small-note">The built-in runner is a safe JavaScript demo. Python and C examples show guided output; real multi-language execution needs a secure backend or code-execution service.</p>
+    </section>
+
+    <section class="section tutor-section" id="tutor">
+      <div class="tutor-banner"><div class="tutor-glow"></div><div class="tutor-copy"><div class="eyebrow"><span class="spark">✦</span> YOUR PERSONAL LEARNING COMPANION</div><h2>Every doubt deserves<br><span>a clear answer.</span></h2><p>Ask a coding question and get a beginner-friendly explanation, examples, and a step-by-step breakdown.</p><div class="tutor-pills"><span>✓ Simple explanations</span><span>✓ Code examples</span><span>✓ Step by step</span></div></div>
+        <div class="chat-card"><div class="chat-top"><div class="bot-avatar">✦</div><div><b>CS Tutor</b><small><i></i> Learning assistant demo</small></div><span class="more">•••</span></div><div class="chat-messages" id="chatMessages"><div class="message bot">Hey there! 👋 I'm your CS learning guide. Ask me about a programming concept, syntax, or error and we'll break it down together.</div><div class="suggestions"><button data-question="Explain variables in simple words">What is a variable?</button><button data-question="Explain for loop with an example">Explain loops</button><button data-question="What is the difference between C and Java?">C vs Java</button></div></div><form class="chat-form" id="chatForm"><input id="chatInput" placeholder="Ask your coding doubt..." autocomplete="off" required><button aria-label="Send question">↑</button></form><div class="chat-disclaimer">Demo tutor · Connect an AI API for open-ended answers.</div></div>
+      </div>
+    </section>
+
+    <section class="section bottom-grid" id="roadmap">
+      <div class="roadmap-card"><div class="section-heading compact"><div><div class="eyebrow">YOUR NEXT STEPS</div><h2>Learning <span>roadmap.</span></h2></div><span class="round-icon">↗</span></div>
+        <div class="roadmap-list"><div class="roadmap-step"><span class="step-number done">✓</span><div><b>01 · Understand the basics</b><p>Variables, data types, input and output</p></div><span class="step-state">START HERE</span></div><div class="roadmap-step"><span class="step-number">02</span><div><b>Control the flow</b><p>Conditions, loops, and logical thinking</p></div><span class="step-state">NEXT UP</span></div><div class="roadmap-step"><span class="step-number">03</span><div><b>Build with functions</b><p>Reusable code and modular programs</p></div><span class="step-state">UP NEXT</span></div><div class="roadmap-step"><span class="step-number">04</span><div><b>Make a mini project</b><p>Apply what you learned in real code</p></div><span class="step-state">GOAL</span></div></div>
+      </div>
+      <div class="challenge-card" id="practice"><div class="eyebrow">QUICK CHALLENGE</div><div class="challenge-symbol">{ }</div><h3>Think like a programmer.</h3><p>What does this JavaScript code print?</p><pre><span>let</span> score = <b>5</b>;
+score += <b>3</b>;
+console.log(score);</pre><div class="challenge-options" id="challengeOptions"><button data-answer="6">6</button><button data-answer="8">8</button><button data-answer="53">53</button><button data-answer="Error">Error</button></div><div id="challengeFeedback" class="challenge-feedback">Choose an answer to check your understanding.</div></div>
+    </section>
+    <footer><a class="brand footer-brand" href="#"><span class="brand-mark">&lt;/&gt;</span><span>CS <b>Learner</b></span></a><span>Made for curious minds. Built for your next breakthrough.</span><a href="#home">Back to top ↑</a></footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
